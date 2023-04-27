@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Mikey1-nuel/Javascript-group-capstone#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "hint": "^7.1.8",
     "html-webpack-plugin": "^5.5.1",
     "style-loader": "^3.3.2",
     "webpack": "^5.81.0",
