@@ -87,8 +87,8 @@ window.setTimeout(() => {
 
 const submitC = async (item1, user1, ID) => {
   let count = 0;
-  // eslint-disable-next-line
-	const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/DQ1WY7tbkUIhRnRaIdyZ/comments/', {
+  // eslint-disable-next-line no-unused-vars
+  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/DQ1WY7tbkUIhRnRaIdyZ/comments/', {
 
     method: 'POST',
     headers: {
@@ -111,8 +111,9 @@ window.setTimeout(() => {
   const submit = document.querySelectorAll('.submit');
   submit.forEach((sub) => {
     sub.addEventListener('click', (e) => {
-      submitC(// eslint-disable-next-line
-		  e.target.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.value,
+      submitC(
+        e.target.previousElementSibling
+          .previousElementSibling.previousElementSibling.previousElementSibling.value,
         e.target.previousElementSibling.previousElementSibling.value,
         e.target.nextElementSibling.innerHTML,
       );

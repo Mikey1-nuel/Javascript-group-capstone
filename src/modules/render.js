@@ -1,5 +1,3 @@
-// import itemCounterFunction from './ItemCount.js';
-
 const itemCounterFunction = async (item, element) => {
   if (item === 0) {
     element.innerHTML = ' (0)';
@@ -28,7 +26,6 @@ const foodRandomSelection = {
         // eslint-disable-next-line no-await-in-loop
         const foodRandomdata = await response.json();
         mealsArray.push(foodRandomdata.meals);
-        // eslint-disable-next-line space-infix-ops
         counter += 1;
       }
       return mealsArray;
@@ -76,13 +73,10 @@ const foodRandomSelection = {
             }
           });
         });
-        // To add or Create like when Heart is pressed
         const likesButton = foodCards.querySelectorAll('.likeSymbol');
         likesButton.forEach((likeButton) => {
           likeButton.addEventListener('click', (e) => {
-          // eslint-disable-next-line max-len
             const targetCounter = e.target.parentElement.nextElementSibling.children[0].innerText;
-            // eslint-disable-next-line max-len
             e.target.parentElement.nextElementSibling.children[0].innerText = +targetCounter + 1;
             fetch(`${involvementApiUrl}${involvementApiKey}/likes/`, {
               method: 'POST',
@@ -95,7 +89,6 @@ const foodRandomSelection = {
             });
           });
         });
-        // item counter
         const itemCounter = document.querySelector('.noOfItems');
         itemCounterFunction(counter, itemCounter);
       });
@@ -103,12 +96,7 @@ const foodRandomSelection = {
 };
 
 export default foodRandomSelection;
-// eslint-disable-next-line space-infix-ops
-const exporting = () => {
-// eslint-disable-next-line
-	mealsArray;
-};
 
-window.setTimeout(exporting, 2);
+window.setTimeout(mealsArray, 2);
 
-export { foodRandomSelection, mealsArray };
+export { foodRandomSelection, mealsArray, itemCounterFunction };
