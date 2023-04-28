@@ -16,6 +16,8 @@
 		"no-shadow": "off",
 		"no-param-reassign": "off",
 		"eol-last": "off",
+		"no-unused-vars": "off",
+        "no-await-in-loop": "off",
 		"import/extensions": [
 			1,
 			{
