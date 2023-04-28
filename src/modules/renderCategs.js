@@ -34,10 +34,8 @@ const renderCategs = async () => {
   categoriesCount.insertAdjacentHTML('afterbegin', categoriesNumber);
   categoriesContainer.insertAdjacentHTML('beforeend', itemsHTML);
   const likeButtons = document.querySelectorAll('.like-icon');
-  console.log(likeButtons)
   likeButtons.forEach((like) => {
     like.addEventListener('click', async (e) => {
-
       const id = e.target.parentNode.parentNode.getAttribute('dataId');
 
       await postLike(id);

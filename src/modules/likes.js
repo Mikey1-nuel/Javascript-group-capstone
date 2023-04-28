@@ -1,6 +1,7 @@
 const involveURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi';
 
 const postLike = async (id) => {
+  // eslint-disable-next-line no-unused-vars
   const response = await fetch(
     `${involveURL}/apps/AEzJkDXLf7FGXWlpS77t/likes`,
     {
