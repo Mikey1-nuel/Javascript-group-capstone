@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+	integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./index.js" type="module"></script>
+  <title>Spicy Foods</title>
 </head>
+
 <body>
-	<h1>Hello webpack!</h1>
+
+  <div class="modal-container" id="modal-container"></div>
+
+  <header>
+    <div class="logo">
+      <a href="#">
+        <img class="logo" src="" alt="logo">
+      </a>
+    </div>
+
+    <nav>
+      <ul class="nav-items">
+        <li class="list-item" id="home"><a href="#">Home</a></li>
+        <li class="list-item"><a href="#footer">CopyRight</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section class="categories-section">
+      <h2>Choose Your Categories (<span class="noOfItems"></span>)</h2>
+      <ul class="card-container" id="categories"></ul>
+    </section>
+
+    <div class="foodCards"></div>
+
+    <footer id="footer">
+      <h3>CopyRight &copy; 2022 Emmanuel and Jorum</h3>
+    </footer>
+
 </body>
 </html>
