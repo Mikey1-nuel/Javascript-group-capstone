@@ -15,7 +15,6 @@ const foodRandomSelection = {
   displayRandomFoodSelection: () => {
     const getResponse = async () => {
       while (counter < 9) {
-      // eslint-disable-next-line no-await-in-loop
         const response = await fetch(
           'https://www.themealdb.com/api/json/v1/1/random.php',
           {
@@ -23,7 +22,6 @@ const foodRandomSelection = {
           },
         );
 
-        // eslint-disable-next-line no-await-in-loop
         const foodRandomdata = await response.json();
         mealsArray.push(foodRandomdata.meals);
         counter += 1;

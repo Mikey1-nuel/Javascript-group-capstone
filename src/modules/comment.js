@@ -87,7 +87,6 @@ window.setTimeout(() => {
 
 const submitC = async (item1, user1, ID) => {
   let count = 0;
-  // eslint-disable-next-line no-unused-vars
   const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/DQ1WY7tbkUIhRnRaIdyZ/comments/', {
 
     method: 'POST',
