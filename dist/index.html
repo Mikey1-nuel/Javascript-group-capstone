@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
-<body>
-	<h1>Hello webpack!</h1>
-</body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <title>Spicy Foods</title>
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+
+  <body>
+
+    <div class="modal-container" id="modal-container"></div>
+
+    <header>
+      <a href="#">
+        <img class="logo" src="" alt="logo">
+      </a>
+
+      <nav>
+        <ul class="nav-items">
+          <li class="list-item" id="home"><a href="#">Home</a></li>
+          <li class="list-item"><a href="#footer">CopyRight</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="categories-section">
+        <h2>Choose Your Categories (<span class="categories-count"></span>)</h2>
+        <ul class="card-container" id="categories"></ul>
+      </section>
+
+     <footer id="footer">
+      <h3>CopyRight &copy; 2022 Emmanuel and Jorum</h3>
+    </footer>
+
+  </body>
+
 </html>
