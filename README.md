@@ -48,7 +48,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://mikey1-nuel.github.io/Javascript-group-capstone/)
+- [Live Demo Link](https://mikey1-nuel.github.io/Javascript-group-capstone/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
