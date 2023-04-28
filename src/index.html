@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+	integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./index.js" type="module"></script>
+  <title>Spicy Foods</title>
+</head>
 
-    <title>Spicy Foods</title>
-  </head>
+<body>
 
-  <body>
+  <div class="modal-container" id="modal-container"></div>
 
-    <div class="modal-container" id="modal-container"></div>
-
-    <header>
+  <header>
+    <div class="logo">
       <a href="#">
-        <img class="logo" src="" alt="logo">
+        <h1 class="header1">Spicy Foods</h1>
       </a>
+    </div>
 
-      <nav>
-        <ul class="nav-items">
-          <li class="list-item" id="home"><a href="#">Home</a></li>
-          <li class="list-item"><a href="#footer">CopyRight</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul class="nav-items">
+        <li class="list-item" id="home"><a href="#">Home</a></li>
+        <li class="list-item"><a href="#footer">CopyRight</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
+    <section class="categories-section">
+      <h2>Choose Your Categories (<span class="noOfItems"></span>)</h2>
+      <ul class="card-container" id="categories"></ul>
+    </section>
 
-      <section class="categories-section">
-        <h2>Choose Your Categories (<span class="categories-count"></span>)</h2>
-        <ul class="card-container" id="categories"></ul>
-      </section>
+    <div class="foodCards"></div>
 
-     <footer id="footer">
+    <footer id="footer">
       <h3>CopyRight &copy; 2022 Emmanuel and Jorum</h3>
     </footer>
 
-  </body>
-
+</body>
 </html>

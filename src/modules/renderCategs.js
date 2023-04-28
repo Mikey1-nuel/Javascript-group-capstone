@@ -1,6 +1,5 @@
 import { fetchCategories, categLength } from './categories.js';
 import { postLike, getLikes } from './likes.js';
-// import likeIcon from '../assets/heart.png';
 
 const displayLikes = async () => {
   const likesNum = await getLikes();
